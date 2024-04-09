@@ -1,0 +1,190 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\colortbl ;\red38\green159\blue135;\red175\green22\blue18;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\b\f0\fs48\lang9 Module 18\par
+\cf0\fs44 Linux server - Manage user and Groups and\par
+working with file systems\par
+\cf2\f1\fs36\bullet\f0\lang1033  \lang9 Assignment Level Basic\par
+\cf0\b0\fs28 1. What is default uid for root user ?\par
+Ans. Root user\rquote s default uid is \lquote 0\rquote .\par
+2. What is default uid for system user ?\par
+Ans. A UID (user identifier) is a number assigned by Linux to each user on the system.\par
+3. What is the uid for normal users ?\par
+Ans. Normal user\rquote s uid is 10000+.\par
+4. How to add comment in user file?\par
+Ans. To add comments in a user file in Linux, you can use the '#' symbol. Comments are lines in a file that are ignored by the system and are intended for human readers to provide explanatory notes or context. Here's how you can add comments to a user file:\par
+[1] Open a terminal.\par
+[2] Use a text editor like nano, vi, or vim to open the user file. For example, to open the file "user.txt" with nano, you can run the following command:\par
+nano user.txt\par
+[3] Move the cursor to the line where you want to add the comment.\par
+[4] Add a '#' symbol at the beginning of the line. For example:\par
+# This is a comment line\par
+[5] Save the file and exit the text editor. In nano, you can do this by pressing Ctrl + O to save and Ctrl + X to exit.\par
+[6] The line starting with '#' will be treated as a comment and will not be processed by the system.\par
+Remember that comments are meant for human readers and are not executed or interpreted by the system. They are useful for providing additional information, explanations, or instructions within a user file.\par
+5. From \ldblquote  /etc/passwd \ldblquote  which information will we gather ?\par
+Ans. This information includes the account name, home directory location, and default shell, among other values.\par
+6. From \ldblquote  /etc/shadow \ldblquote  which information will we gather ?\par
+Ans. The /etc/shadow file provides an enhanced authentication mechanism for Linux systems by tightening access at the account level. This text file stores actual passwords in hashed format, along with additional information related to these passwords.\par
+7. From \ldblquote  /etc/group \ldblquote  which information will we gather ?\par
+Ans. The /etc/group file stores group information and is the default configuration file.\par
+8. From \ldblquote  /etc/gshadow \ldblquote  which information will we gather ?\par
+Ans. This text file stores actual passwords in hashed format, along with additional information related to these passwords.\par
+9. What is the meaning of + and \f1\endash  in file permission?\par
+Ans. In Linux file permissions, the symbols '+' and '-' are used to represent the addition and removal of permission attributes, respectively.\par
+Here's a breakdown of the meanings of '+' and '-' in file permissions:\par
+\b\bullet\cf2\f0\fs36\lang1033  \cf0\b0\f1\fs28\lang9 '+': The '+' symbol is used to add a permission attribute to a file or directory. It indicates that a specific permission is being granted or added to the existing set of permissions. The permission attributes that can be added include read ('r'), write ('w'), and execute ('x') permissions.\par
+\b\bullet\f0\lang1033  \b0\f1\lang9 '-': The '-' symbol is used to remove a permission attribute from a file or directory. It indicates that a specific permission is being revoked or removed from the existing set of permissions. The permission attributes that can be removed include read ('r'), write ('w'), and execute ('x') permissions.\par
+10.What is \ldblquote  r \ldblquote  \ldblquote  w \rdblquote  \lquote  x \ldblquote  in file permission\par
+\f0\lang1033 Ans. rwx means that this user can read, write and execute this file.\f1\lang9\par
+11.What is \ldblquote  4 \ldblquote  \ldblquote  2 \ldblquote  \ldblquote 1\rdblquote  in files permission\par
+\f0\lang1033 Ans. 4 if read permission is granted, 2 if write permission is granted and 1 if execute permission is granted.\f1\lang9\par
+12.What is the use of umask?\par
+\f0\lang1033 Ans. umask (user file-creation mode) is a Linux command that lets you set up default permissions for newly created files and folders.\f1\lang9\par
+13.What is default root permission for directory?\par
+\f0\lang1033 Ans. 777 is default root permission for directory.\par
+\cf2\b\f1\fs36\lang9\bullet\f0\lang1033  Assignment Level Intermediate\par
+\cf0\b0\fs28 1. How to assign another new home directory for new user?\par
+Ans. Changing the Home Directory: The ` usermod ` Command.\par
+2. Command to check group membership of any user\par
+Ans. The pts membership command to display the members of a group\par
+3. What happened if I use \ldblquote  su \f1\endash  \ldblquote  command ?\par
+\f0 Ans. The su command lets you switch the current user to any other user. \f1\par
+4. Which command is used to delete any user with its home directory?\par
+\f0 Ans. userdel Command.\f1\par
+5. How to add new user without home directory \f0 ?\par
+Ans. $ useradd -M <username>.\f1\par
+6. Command to assign account expiry to the user ?\par
+Ans. Use the Chage command to set the expiry date for an account.\par
+\f0 7. Command to add a new group \'85\f1\par
+\f0 Ans. use the groupadd command.\f1\par
+8. What is default root permission for file?\par
+\f0 Ans. 666  is default root permission for file.\f1\par
+9. What is the default umask for root?\par
+10.What is the default umask for student?\par
+11.Which command is used to set user ownership?\par
+\f0 Ans. If you want to manage the ownership of your Linux files or directories, use the chown command.\f1\par
+12.Which command is used to set group ownership?\par
+\f0 Ans. The `chgrp` command in Linux is used to change the group ownership.\par
+\cf2\b\f1\fs36\lang9\bullet\f0\lang1033  Assignment Level Advance\fs32\par
+\cf0\b0\fs28 1. I have on user with the name of KAMAL, Now, I want to add this user in the group name Nwhich command will used?\par
+Ans. Use the usermod command.\par
+2. What is the difference between \ldblquote  usermod -G \ldblquote  and \ldblquote  usermod -aG \ldblquote\par
+Ans. The difference between the usermod -G and usermod -aG commands lies in how they handle the modification of group membership for a user.\par
+[1] usermod -G: \par
+\b\f1\lang9\bullet\f0\lang1033  \b0 The usermod -G command is used to set the primary group membership of a user. When you use this command, it replaces the user's existing group membership with the specified group(s). It removes the user from all other groups and assigns only the group(s) specified.\par
+Example:\par
+\b\f1\lang9\bullet\f0\lang1033  \b0 sudo usermod -G newgroup username\par
+In this example, the user "username" will have their primary group membership changed to "newgroup". This means they will be removed from all other groups and assigned only to "newgroup". If multiple groups need to be set, you can separate them with commas (e.g., newgroup1, newgroup2).\par
+[2] usermod -aG: \par
+\b\f1\lang9\bullet\f0\lang1033  \b0 The usermod -aG command is used to add a user to additional group(s) while retaining their existing group membership. It appends the user to the specified group(s) without removing them from any other groups they are currently a member of.\par
+Example:\par
+\b\f1\lang9\bullet\f0\lang1033  \b0 sudo usermod -aG additionalgroup username\par
+In this example, the user "username" will be added to the "additionalgroup" without affecting their existing group memberships.\par
+To summarize, usermod -G replaces the user's current group membership with the specified group(s), while usermod -aG adds the user to additional group(s) without modifying their existing group memberships.\par
+3. What is the meaning of \ldblquote  -1 \ldblquote  in password state information?\par
+Ans. In Linux, the password state information field (also known as the password status field) in the /etc/shadow file is represented by a number or character that indicates the status of the user's password. The value "-1" in the password state information field represents that the password has been locked.\par
+Here's a breakdown of the meanings of password state information values:\par
+\b\f1\lang9\bullet\f0\lang1033  \b0 "0" or "!" - The user can log in with no password (password is disabled).\par
+\b\f1\lang9\bullet\f0\lang1033  \b0 "*" - The user cannot log in with a password (password is locked).\par
+\b\f1\lang9\bullet\f0\lang1033  \b0 "-1" - The password has been locked (typically used by certain utilities or system administrators to indicate a locked password).\par
+\b\f1\lang9\bullet\f0\lang1033  \b0 "x" or "!!" - The password is expired and must be changed upon the next login.\par
+4. Which command tis used to remove the password of any user?\par
+Ans. If you want to make a user account passwordless, you can use the -d ( --delete ) option with the passwd command.\par
+5. What is the use of \ldblquote  gpasswd \ldblquote  ?\par
+Ans. gpasswd command is used to administer the /etc/group and /etc/gshadow.\par
+6. Command to change password policy\par
+Ans. \par
+7. What is use of \ldblquote  sudo \ldblquote\par
+Ans. it allows you to temporarily elevate your current user account to have root privileges. \par
+8. Command to reset virtual machine\par
+Ans. Ans. VBoxManage controlvm <vm_name> reset\par
+9. How to change user and group ownership on same time\par
+Ans. The chown command changes the owner of a file, and the chgrp command changes the group.\par
+10.Command to change user permission on directory\par
+Ans. chmod o-rwx foldername.\par
+11.List of special permission in Linux 7.0 is\'85\'85\par
+Ans. write\tab -w-\tab 010\par
+execute\tab --x\tab 001\par
+read, write\tab rw-\tab 110\par
+read, execute\tab r-x\tab 101\par
+12.What happened if i used this command\'85?[ #chmod u+s /user/bin/vim ]\par
+Ans. Ans. The command chmod u+s /usr/bin/vim sets the SetUID (SUID) permission on the vim executable binary located at /usr/bin/vim. The SetUID permission allows the user who executes the vim command to temporarily run the program with the effective user ID (UID) of the file's owner (in this case, the owner of the vim binary).\par
+13.What happened if i used this command\'85. [ #chmod g+s /data ]\par
+Ans. Ans. The command chmod g+s /data sets the SetGID (SGID) permission on the directory named /data. When the SGID permission is set on a directory, any new files or subdirectories created within that directory will inherit the group ownership of the parent directory, rather than the group ownership of the user who created the file or directory.\par
+\cf2\b\f1\fs36\bullet\f0  Task : 1\par
+\cf0\b0\fs28 1. Find details about current logged-in user.\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+2. Show all processes on terminal\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+3. Create primary group\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+4. Create supplementary group\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+5. Find groups details and list on terminal P6. Find user details and list on terminal.\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+6. Use \ldblquote sudo\rdblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+7. View the last 5 lines of the \ldblquote  /var/log/messages \ldblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+8. Add a new user with name \ldblquote  NuPuR \ldblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+9. Remove this user and user\rquote s home directory\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+10.Create new supplementary group name is \ldblquote  whEEL \ldblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+11.Create a new user with name \ldblquote  ELviS \ldblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+12.Add / Append a user to a supplementary group\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+13.Restrict / Lock login access for \ldblquote  ELviS \ldblquote  user\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+14.Create a new user name \ldblquote  LiNuX without home directory\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+15.Create a new user name \ldblquote  RedHat \ldblquote  with new home directory \ldblquote\line\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+16./etc/HatRed\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+17.Create a new user with two(2) days expiry\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+18.Remove password for \ldblquote  ELviS \ldblquote  user\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+19.Check user password policy for \ldblquote  LiNuX \ldblquote  user\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+\cf2\b\f1\fs36\bullet\f0  Task : 2\par
+\cf0\b0\fs28 1. Login from \ldblquote LiNuX\rdblquote  user\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+2. Create new directory on desktop name is "FoLdEr\rdblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+3. Change group ownership from LiNuX to root on \ldblquote FoLdEr\rdblquote  directory\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+4. Create new file on /etc/ with name \ldblquote  FiLe\rdblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+5. Check permissions of above file\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+6. Login from \ldblquote student\rdblquote  user\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+7. Create new directory on students home with name \ldblquote file1\rdblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+8. Remove read and write permission for group and other on above file \ldblquote file1\rdblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+9. Add execute permission for everyone on \ldblquote file2\rdblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+10.Set Read,write,execute for USER\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+11.Set Read and execute for GROUP\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+12.Set No permission for other on \ldblquote Directory1\rdblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+13.Create new group name \ldblquote ateam\rdblquote  , And add two new user in this group\par
+\ldblquote andy\rdblquote  and \ldblquote alice\rdblquote , set password is \ldblquote password\rdblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+14.Login from root and root home directory\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+15.Create a new directory in \ldblquote /home\rdblquote  name is \ldblquote ateam-text\rdblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+16.Change the group ownership of the ateam-text directory to \ldblquote ateam\rdblquote .\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+17.Ensure the permission of ateam-text allows group members to create\par
+\lang9 Ans. Command Perform In Our Lab system.\par
+}
+ 

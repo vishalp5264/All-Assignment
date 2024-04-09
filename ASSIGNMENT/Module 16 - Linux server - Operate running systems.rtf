@@ -1,0 +1,156 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\colortbl ;\red39\green155\blue175;\red157\green24\blue17;\red132\green15\blue15;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\b\f0\fs48\lang9 Module 16\par
+\cf0\fs40 Linux server - Operate running systems\par
+\cf2\f1\fs36\bullet\f0\lang1033  \lang9 Assignment Level Basic to Advance\par
+\cf0\b0\fs28 1. What is PID ?\par
+Ans. Its process ID.\par
+2. What is PPID?\par
+Ans.  The PPID is the PID of the process's parent.\par
+3. What is the use of \ldblquote  ps \ldblquote  command ?\par
+Ans. The ps command allows you to display information about running processes.\par
+4. What is the use of \ldblquote  ps aux \ldblquote  command ?\par
+Ans. The ps aux command displays more useful information than other similar options\par
+5. What is the use of \ldblquote  tops \ldblquote  command ?\par
+Ans. top command is used to show the Linux processes\par
+6. Which command is used to change priority value ?\par
+Ans. renice command.\par
+7. What is the use of \ldblquote jobs\rdblquote  command ?\par
+Ans. The jobs command will list all jobs on the system; active, stopped, or otherwise. \par
+8. What is the use of grep command ?\par
+Ans. The grep command finds all lines that match the text pattern regardless of where the pattern is located.\par
+9. What is system?\par
+Ans. Red Hat Enterprise Linux (RHEL) is an enterprise Linux operating system (OS) developed by Red Hat for the business market.\par
+10.What is daemons?\par
+Ans. A daemons is a program that waits for another program to ask it to do something.\par
+11.I want to check the service status for\rdblquote  sshd\rdblquote , which will help me?\par
+Ans. systemctl status ssh.service.\par
+12.How to stop and start services in terminal?\par
+Ans. START - systemctl start servicename.\par
+          STOP - systemctl stop servicename. \par
+13.What is the use of openSSH ?\par
+Ans. SSH (Secure Shell) is a protocol which facilitates secure communications between two systems using a client-server architecture and allows users to log into server host systems remotely.\par
+14.Which command is used to generate key in linux ?\par
+Ans. ssh-keygen -t rsa.\par
+15.Which command is used to copy ssh key?\par
+Ans. ssh-copy-id command.\par
+16.How do we prohibit the root user from logging in using ssh?\par
+Ans. Edit /etc/ssh/sshd_config with your favorite text editor and change \ldblquote PermitRootLogin yes\rdblquote  to \ldblquote PermitRootLogin no\rdblquote .\par
+17.How do we prohibit password authentication using ssh?\par
+Ans. PasswordAuthentication no.\par
+Press ESC key and save the changes to the file and exit the editor by typing: wq! and then hit Enter. \par
+18.Where we find general logs ?\par
+Ans. Most log files are located in the /var/log/ directory. \par
+19.Where we find secure logs ?\par
+Ans. /var/log directory\par
+20.Where we find mail log ?\par
+Ans.  /var/log/maillog or var/log/mail.\par
+21.Where we find scheduling logs?\par
+Ans. \par
+22.Where we find booting logs?\par
+Ans. \par
+23.What is the use of \ldblquote lastb\rdblquote  command ?\par
+Ans. The last command in Linux is used to display the list of all the users logged in and out.\par
+24.Where we find general logs ?\par
+Ans. Most log files are located in the /var/log/ directory. \par
+25.Where we find secure logs ?\par
+Ans. /var/log directory\par
+27.What is the use of \ldblquote lastb\rdblquote  command ?\par
+Ans. The last command in Linux is used to display the list of all the users logged in and out.\par
+\cf2\b\f1\fs36\bullet\f0\lang1033  \lang9 Assignment Level Intermediate\par
+\cf0\b0\fs28 1. Remote host is \ldblquote NADIAD\rdblquote , Remote user is \ldblquote KAMAL,\par
+how to access remote user via ssh? [ wright down the command]\par
+2. What is the use of \ldblquote w -f \ldblquote command ?\par
+Ans. w -f : This option will toggle printing the from (remote hostname) field.\par
+3. What is \ldblquote SSHS host keys \ldblquote ?\par
+Ans.  A host key is a cryptographic key used for authenticating computers in the SSH protocol.\par
+4. What is the default location for server\rquote s public key in client side?\par
+Ans. This public key is stored in the ~/. ssh/authorized_keys or ~/. ssh/authorized_keys2 file of the authenticating user.\par
+5. I want to fire \ldblquote ls -l /etc\rdblquote  command on remote host \ldblquote desktop\rdblquote\par
+[ wright down the command ]\par
+6. What is the use of this command \ldblquote  #journalctl --since today \ldblquote\par
+Ans. The `journalctl` command is part of the systemd suite of utilities and is used to query and display log messages from the systemd journal.\par
+7. What is \ldblquote  chronyd \ldblquote ?\par
+Ans. Chronyd is an implementation of the Network Time Protocol (NTP).\par
+8. Full form of NTP\par
+Ans. Network Time Protocol.\par
+9. Port number for NTP is\'85\par
+Ans. Port 123\par
+10.I want to check timzone, which command will help me ?\par
+Ans. We can use the timedatectl command to display the timezone along with other information.\par
+11.How to set timezone? Give a comman\'85.\par
+Ans. use the sudo timedatectl set-timezone command followed by the long name of the time zone you want to set.\par
+\cf3\b\f1\fs36\bullet\f0\lang1033  \lang9 Task :1\par
+\cf0\b0\fs28 1. Display all processes on display\par
+Ans. Command Perform In Our Lab System.\par
+2. In terminal, Determine the number of logical CPUs\par
+Ans. Command Perform In Our Lab System.\par
+3. Start and check any new job\par
+Ans. Command Perform In Our Lab System.\par
+4. Start any new job in background\par
+Ans. Command Perform In Our Lab System.\par
+5. Start any background job on foreground\par
+Ans. Command Perform In Our Lab System.\par
+6. Check running process\par
+Ans. Command Perform In Our Lab System.\par
+7. Check all running process under user\par
+Ans. Command Perform In Our Lab System.\par
+8. Kill any process via it\rquote s PID\par
+Ans. Command Perform In Our Lab System.\par
+9. Change nice values for any new process\par
+Ans. Command Perform In Our Lab System.\par
+10.Change nice value for any running user\par
+Ans. Command Perform In Our Lab System.\par
+11.Check the status of sshd.service\par
+Ans. Command Perform In Our Lab System.\par
+12.Stop the servive of sshd.service\par
+Ans. Command Perform In Our Lab System.\par
+13.Start the service of sshd.service\par
+Ans. Command Perform In Our Lab System.\par
+14.Login in server vm\par
+Ans. Command Perform In Our Lab System.\par
+15.Display the status of \ldblquote chronyd\rdblquote\par
+Ans. Command Perform In Our Lab System.\par
+16.Restart \ldblquote sshd.service\rdblquote\par
+Ans. Command Perform In Our Lab System.\par
+\cf3\b\f1\fs36\bullet\f0\lang1033  \lang9 TASK: 3\par
+\cf0\b0\fs28 1. Start desktop machine\par
+Ans. Command Perform In Our Lab System.\par
+2. Get remote access of server machine\par
+Ans. Command Perform In Our Lab System.\par
+3. Create new user in server name \ldblquote user1\rdblquote\par
+Ans. Command Perform In Our Lab System.\par
+4. From desktop machine,login \ldblquote user1\rdblquote  of server user\par
+Ans. Command Perform In Our Lab System.\par
+5. Execute single command \ldblquote hostname\rdblquote  , on remote host\par
+(server), and as a remote user \ldblquote user1\rdblquote\par
+Ans. Command Perform In Our Lab System.\par
+6. Display a list of currently logged into the computer\par
+Ans. Command Perform In Our Lab System.\par
+7. Generate private-public ssh key with password\par
+Ans. Command Perform In Our Lab System.\par
+8. Import this key on remote host side\par
+Ans. Command Perform In Our Lab System.\par
+\cf3\b\f1\fs36\bullet\f0\lang1033  \lang9 Task: 4\par
+\cf0\b0\fs28 1. Open general logs\par
+Ans. Command Perform In Our Lab System.\par
+2. Open secure message logs\par
+Ans. Command Perform In Our Lab System.\par
+3. Open only mail logs\par
+Ans. Command Perform In Our Lab System.\par
+4. Check scheduling logs\par
+Ans. Command Perform In Our Lab System.\par
+5. Check booting logs\par
+Ans. Command Perform In Our Lab System.\par
+6. See the info about \ldblquote bad logging\rdblquote\par
+Ans. Command Perform In Our Lab System.\par
+7. Check emperor logs\par
+Ans. Command Perform In Our Lab System.\par
+8. Check today\rquote s temporary logs\par
+Ans. Command Perform In Our Lab System.\par
+9. Set new time zone\par
+Ans. Command Perform In Our Lab System.\par
+\par
+}
+ 

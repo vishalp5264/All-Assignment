@@ -1,0 +1,181 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}{\f2\fnil\fcharset2 Wingdings;}}
+{\colortbl ;\red75\green172\blue198;\red193\green0\blue0;\red157\green21\blue24;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\b\f0\fs44\lang9 Module: 13 Networking with Windows Server\par
+\cf0\fs36 Installing and configure DNS server\par
+\b0\fs28 1. Describe DNS operation\par
+Ans. A Domain Name System (DNS) turns domain names into IP addresses, which allow browsers to get to websites and other internet resources.\par
+2. DNS query\f1\emdash Iterative and Recursive\par
+\f0\lang1033 Ans. A recursive DNS lookup is where one DNS server communicates with several other DNS servers to hunt down an IP address and return it to the client. \f1\lang9\par
+3. what is forward lookup zone and its resource type\par
+\f0\lang1033 Ans. Forward Lookup Zones allow the DNS Server to resolve queries where the client sends a name to the DNS Server to request the IP address of the requested host. \f1\lang9\par
+4. what is reverse lookup zone and its resource type\par
+\f0\lang1033 Ans. Reverse lookup zone is an authoritative DNS zone that is used primarily to resolve IP addresses to network resource names. \f1\lang9\par
+5. what is conditional forwarder\par
+\f0\lang1033 Ans. Conditional DNS forwarding is a method to direct DNS queries related to a specific domain to another DNS server. \f1\lang9\par
+6. what is primary zone, secondary zone and stub zone\par
+7. what is active directory integrated zone\par
+\f0\lang1033 Ans. AD-integrated DNS zones are stored in directory partitions within Active Directory.  \par
+\f1\lang9 8. primary server, secondary server, cache only server\par
+\f0\lang1033 Ans. Primary DNS servers contain all relevant resource records and handle DNS queries for a domain. By contrast, secondary DNS servers contain zone file copies that are read-only, meaning they cannot be modified. A cache-only server is a server that is not a master server for any zone other than the in-addr.arpa. domain.\f1\lang9\par
+9. what is aging and scavenging\par
+\f0\lang1033 Ans. The age of the DNS record is the difference between the last time stamp and the current time of the server.\f1\lang9\par
+10. what is MX record\par
+\f0\lang1033 Ans. An MX record, or mail exchange record, is a DNS record that routes emails to specified mail servers. MX records essentially point to the IP addresses of a mail server's domain.\par
+\cf2\b\f2\fs36\'b7\f0  Practical\par
+\cf0\b0\fs28 1. install active directory integrated dns\par
+Ans. Done In Lab.\par
+2. create secondary dns and zone transfer\par
+Ans. Done In Lab.\par
+3. create \ldblquote A\rdblquote  record\par
+Ans. Done In Lab.\par
+4. create alias\par
+Ans. Done In Lab.\par
+5. create reverse lookupzone\par
+Ans. Done In Lab.\par
+6. make a pointer\par
+Ans. Done In Lab.\par
+7. apply conditional forwareder betwwen two different domain\par
+Ans. Done In Lab.\par
+8. nslookup command\par
+Ans. Done In Lab.\par
+\b\fs36 DHCP\par
+\b0\fs28 1. purpose of DHCP\par
+Ans. Dynamic Host Configuration Protocol (DHCP) is a network protocol that is used to configure network devices to communicate on an IP network.\par
+2. what is DORA process?\par
+Ans. DORA ( Discover, Offer, Request, Acknowledgement ). \par
+This process consists of the following steps: The DHCP client sends a DHCP Discover broadcast request to all available DHCP servers within range. A DHCP Offer broadcast response is received from the DHCP server, offering an available IP address lease.\par
+3. what is authorised DHCP server?\par
+Ans. An authorized DHCP server is a server that has been given permission to lease IP addresses to DHCP clients on a network. \par
+4. describe scope, lease duration, DHCP option, exclude address\par
+Ans. A DHCP scope is a valid range of IP addresses that are available for assignment or lease to client computers on a particular subnet. The default lease time for the DHCP server is 24 hours. \par
+5. what is reservation?\par
+Ans.  DHCP IP reservation, you're telling your Wi-Fi network to assign the same IP address to a specific device whenever that device connects to your network.\par
+6. what is dhcp relay agent?\par
+Ans. The DHCP relay agent operates as the interface between DHCP clients and the server.\par
+7. describe ipconfig commnad \f1\lang9\par
+\f0 Ans. That displays all current TCP/IP network configuration values and refreshes Dynamic Host Configuration Protocol (DHCP) and Domain Name System (DNS) settings.\par
+\cf2\b\f2\fs36\'b7\f0  Practical\par
+\cf0\b0\fs28 1. install dhcp sever and make authorize\par
+Ans. Done In Lab.\par
+2. create a scope and check on client by ipconfig\par
+Ans. Done In Lab.\par
+3. dhcp database and take backup\par
+Ans. Done In Lab.\par
+4. dhcp failover\par
+Ans. Done In Lab.\par
+5. dhcp relay agent\par
+Ans. Done In Lab.\par
+6. dhcp filter\par
+Ans. Done In Lab.\par
+7. dhcp reservation\par
+Ans. Done In Lab.\par
+\b\fs36 IPAM\par
+\b0\fs28 1. what is IPAM and purpose of IPAM\par
+Ans. IPAM use for manage or Identify all assigned ip address to our client. \par
+2. why need dedicated server\par
+Ans. Dedicated servers provide an exclusive, dedicated operating system with no contention of resources.\par
+3. policy for ipam sever\par
+4. which monservice itor and manage by IPAM\par
+\cf2\b\f2\fs36\'b7\f0  Practical\par
+\cf0\b0\fs28 1. Install IPAM\par
+Ans. Done In Lab.\par
+2. configure IPAM with six step\par
+Ans. Done In Lab.\par
+3. create dhcp scope using IPAM 4 create DNS zone\par
+Ans. Done In Lab.\par
+4. check monitoring of sevices\par
+Ans. Done In Lab. \par
+\b\fs36 Remote connectivity and VPN\par
+\b0\fs28 1. what is VPN?\par
+Ans. A Virtual Private Network (VPN) adds security and anonymity to users when they connect to web-based services and sites. A VPN hides the user's actual public IP address and \ldblquote tunnels\rdblquote  traffic between the user's device and the remote server.\par
+2. type of VPN\par
+3. tunneling protocol\par
+Ans. In computer networks, a tunneling protocol is a communication protocol which allows for the movement of data from one network to another.\par
+4. authentication protocol\par
+Ans.  An authentication protocol allows the receiving party (such as a server) to verify the identity of another party (such as a person using a mobile device to log in).\par
+5. what is routing\par
+Ans. With server-side routing, a user clicks a link that requests a new page or new data from the server (another computer). And then new data or document is served to the user.\par
+\cf3\b\f2\fs32\'b7\f0  Practical\par
+\cf0\b0\fs28 1. install routing and remote access\par
+Ans. Done In Lab.\par
+2. configure LAN routing\par
+Ans. Done In Lab.\par
+3. configure vpn connection (VPN client)\par
+Ans. Done In Lab.\par
+\b\fs36 Network policy server\par
+\b0\fs28 1. what is Radius server\par
+Ans. RADIUS enables a company to maintain user profiles in a central database that all remote servers can share. \par
+2. what is authentication authorization and accounting\par
+Ans. AAA stands for authentication, authorization, and accounting. AAA is a framework for intelligently controlling access to computer resources, enforcing policies, auditing usage, and providing the information necessary to bill for services.\par
+3. RADIUS server operation method and radius client\par
+Ans. The RADIUS client forwards the remote user's user ID and password to the RADIUS authentication server.\par
+4. RADIUS port number\par
+Ans. RADIUS is an open-standard AAA protocol that uses UDP port 1645 or 1812 for authentication and UDP port 1646 or 1813 for accounting. \par
+5. what is network policies (NPS)?\par
+Ans. Network Policy Server (NPS) allows you to create and enforce organization-wide network access policies for connection request authentication and authorization.\par
+\cf3\b\f2\fs32\'b7\f0  Practical\par
+\cf0\b0\fs28 1. P1 configure RADIUS for wireless client\par
+Ans. Done In Lab.\par
+2. confiure NPS for remote access\par
+Ans. Done In Lab\par
+\b\fs36 IPv4 addressing and IPv6 addressing\par
+\b0\fs28 1. what is ip address?And type of ip address\par
+Ans. An internet protocol (IP) address allows computers to send and receive information. There are four types of IP addresses: public, private, static, and dynamic.\par
+2. class of ip address\par
+Ans.  Class A, Class B, and Class C.\par
+3. public ip address and private ip address\par
+Ans. A public IP address is a unique IP address assigned to your network router by your internet service provider and can be accessed directly over the internet.\par
+A private IP address is a unique address that your network router assigns to your device. It is used within a private network to connect securely to other devices.\par
+4. what is static ip address, dhcp and APIPA]\par
+Ans. APIPA serves as a DHCP server failover mechanism and makes it easier to configure and support small LANs.\par
+5. what is ipv6 address?\par
+Ans. An IPv6 address is a 128-bit alphanumeric value that identifies an endpoint device in an Internet Protocol Version 6 (IPv6) network. \par
+6. ipv6 dhcp process\par
+Ans. The client sends a Request message to a specific DHCPv6 server to request IP addresses and configuration parameters\par
+7. what is NAT?\par
+Ans. NAT stands for network address translation.\par
+8. what id gateway address?\par
+Ans. The gateway address (or default gateway) is a router interface connected to the local network that sends packets out of the local network. \par
+9. what is loopback address?\par
+Ans. The IP address 127.0. 0.1 is called a loopback address.\par
+10. different type of ipv6 address\par
+Ans. The three types of IPv6 addresses are: unicast, anycast, and multicast.\par
+11. ipv6 tunnelling\par
+Ans. IPv6 Tunneling is a mechanism for encapsulating IPv4 and IPv6 packets inside IPv6 packets.\par
+\cf3\b\f2\fs32\'b7\f0  Practical\par
+\cf0\b0\fs28 1. configure ipv6 address manually and test with ping\par
+Ans. Done In Lab.\par
+2. IPv6 address automatically\par
+Ans. Done In Lab.\par
+3. ping utility\par
+Ans. Done In Lab.\par
+4. ipconfig\par
+Ans. Done In Lab.\par
+5. tracert / traceroute\par
+Ans. Done In Lab.\par
+6. dhcpv6\par
+Ans. Done In Lab.\par
+\b\fs32 DFS\par
+\b0\fs28 1. what is DFS? And purpose of DFS\par
+Ans. The Distributed File System (DFS) functions provide the ability to logically group shares on multiple servers and to transparently link shares into a single hierarchical namespace.\par
+2. Define DFS namespace and DFS replication\par
+Ans. DFS Namespaces and DFS Replication are a part of the File and Storage Services role.\par
+3. what is folder target?\par
+Ans. A folder target is the Universal Naming Convention (UNC) path of a shared folder or another namespace that is associated with a folder in a namespace.\par
+\cf3\b\f2\fs32\'b7\f0  Practical\par
+\cf0\b0\fs28 1. install DFS namespace and replication\par
+Ans. Done In Lab.\par
+2. configure common namespace\par
+Ans. Done In Lab.\par
+3. configure replication and check\par
+Ans. Done In Lab.\par
+4. configure branch cache\par
+Ans. Done In Lab.\par
+\cf3\b\fs32 Advance Network\par
+\cf0\b0\fs28 1. what is SDN?\par
+Ans. Software defined networking (SDN) provides a way to centrally configure and manage networks and network services such as switching, routing, and load balancing in your data center. \par
+2. what is SCVMM? \par
+Ans. System Center Virtual Machine Manager (SCVMM) is a management tool for Microsoft's Hyper-V virtualization platform.\par
+}
+ 

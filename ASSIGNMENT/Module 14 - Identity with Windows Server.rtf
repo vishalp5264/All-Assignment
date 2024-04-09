@@ -1,0 +1,175 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\colortbl ;\red51\green175\blue189;\red190\green35\blue7;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\b\f0\fs48\lang9 Module: 14 Identity with Windows Server\par
+\cf0\f1\fs36\bullet\f0\lang1033  \lang9 Active directory domain services\par
+\b0\fs28 1. what is domain controller?\par
+Ans. The Domain Controller is responsible for maintaining the authentication and authorization of users and computers in the network.\par
+2. describe forest, domain, tree, schema, OU, container, site, subnet,\par
+Ans. Forest : An Active Directory forest is the highest level of organization within Active Directory. \par
+\f1\bullet\f0\lang1033  \lang9 Domain : An Active Directory domain (AD domain) is a collection of objects within a Microsoft Active Directory network.\par
+\f1\bullet\f0\lang1033  \lang9 Tree : An Active Directory (AD) tree is a collection of domains within a Microsoft Active Directory network. \par
+\f1\bullet\f0\lang1033  \lang9 Schema : A schema is the definition of attributes and classes that are part of a distributed directory and is similar to fields and tables in a database.\par
+\f1\bullet\f0\lang1033  \lang9 OU : Organizational units (OUs) in an Active Directory Domain Services (AD DS) managed domain let you logically group objects such as user accounts, service accounts, or computer accounts.\par
+\f1\bullet\f0\lang1033  \lang9 Site : AD sites are physical groupings of well-connected IP subnets that are used to replicate information among domain controllers (DC) efficiently.\par
+\f1\bullet\f0\lang1033  \lang9 Subnet : A network subnet is a segment of a TCP/IP network to which a set of logical IP addresses is assigned.\par
+3. partition, trust relationship\par
+4. what is active directory?\par
+Ans. Active Directory (AD) is a database and set of services that connect users with the network resources they need to get their work done.\par
+5. what is global catalog server?\par
+Ans. The global catalog is a feature of Active Directory (AD) that allows a domain controller (DC) to provide information on any object in the forest, regardless of whether the object is a member of its domain. \par
+6. what is ADC AND RODC?\par
+Ans. ADC - Active Directory Connector (ADC) is a gateway that receives Active Directory user updates and automatically makes the same changes within your account making user management easier and more efficient.\par
+\f1\bullet\f0\lang1033  \lang9 RODC - An RODC is a new type of domain controller that hosts read-only partitions of the Active Directory database. \par
+7. what is operation master role?\par
+Ans. Operations master role holders are assigned automatically when the first domain controller in a given domain is created.\par
+8. type of operation master role and describe all role.\par
+Ans. There are five different operations master roles: \par
+[1] Schema  [2] Domain Naming   [3] Primary Domain Controller (PDC) emulator   [4] Relative Identifier (RID)   [5]  Infrastructure.\par
+9. difference between transferring and seizing role\par
+Ans. Transferring makes the old DC know that it does not own the role(s) any more.\par
+10. password policy\par
+Ans. A password policy sets the rules that passwords for a service must meet, such as length and type of characters allowed and disallowed.\par
+11. what id profile and type of profile?\par
+Ans. A profile-type defines a set of properties, also referred to as a schema, that are inherent to all profiles of that type. \par
+12. group nesting and scope, type of group\par
+Ans. AD group nesting, simply put, is the process of putting one group inside another group.\par
+\cf2\b\fs32  \f1\bullet\f0\lang1033  \lang9 Practical\par
+\cf0\b0\fs28 1. install ADDS and create a new forest\par
+Ans. Done In Lab.\par
+2. give membership of pc to domain\par
+Ans. done In Lab.\par
+3. create a ADC\par
+Ans. Done In Lab.\par
+4. create RODC and password replication\par
+Ans. Done In Lab.\par
+5. create a new site\par
+Ans. Done In Lab.\par
+6. create a new child domain\par
+Ans. Done In Lab.\par
+7. create a new tree\par
+Ans. Done In Lab.\par
+8. create a new user with GUI and CLI\par
+Ans. Done In Lab.\par
+9. create roaming profile\par
+Ans. Done In  Lab.\par
+10. create OU and give delegation\par
+Ans. Done In Lab.\par
+11. create a group\par
+Ans. Done In Lab.\par
+12. transfer roles\f1\emdash PDC, RID , schema master ,\par
+\f0\lang1033 Ans. Done In Lab.\f1\lang9\par
+13. Doamin name master\emdash\par
+\f0\lang1033 Ans. Done In Lab.\f1\lang9\par
+14. GUI and ntdsutil\par
+\f0\lang1033 Ans. Done In Lab.\f1\lang9\par
+15. IFM\par
+\f0\lang1033 Ans. Done In Lab.\par
+\b\fs36\lang9  \f1\bullet\f0\lang1033  Advance feature\par
+\b0\fs28 1. describe account policy\par
+Ans. Account Policy is a set of rules specified for a domain using User Manager for Domains that determines the restrictions placed on passwords for users in that domain.\par
+2. describe account lockout policy\par
+Ans. The Account lockout threshold policy setting determines the number of failed sign-in attempts that will cause a user account to be locked. \par
+3. what is trust relationship\par
+Ans. The access relationship that is granted by an authorized key in an account on one system (server) and a corresponding identity key in an account on another system (client). \par
+4. type of trust relationship describe all trust\par
+5. what is site and subnet ?\par
+Ans. a site is defined as a collection of one or more subnets that are connected together by means of high-speed or high-bandwidth links.\par
+\cf2\b\fs32  \lang9  \f1\bullet\f0\lang1033  Practical\par
+\cf0\b0\fs28 1. manage active directory offline\par
+Ans. Done In Lab.\par
+2. restore object of active directory from AD Recycle bin\par
+Ans. Done In Lab.\par
+3. backup active directory\par
+Ans. Done In Lab.\par
+4. manage active directory replication---repadmin DcDiag\par
+Ans. Done In Lab.\par
+5. create multiplae UPN suffix multidomain enviourment\par
+Ans. Done In Lab.\par
+6. configure trust between forest check with login\par
+Ans. Done In Lab.\par
+7. configure ADDS sites and subnet\par
+Ans. Done In Lab.\par
+\b\fs36\lang9  \f1\bullet\f0\lang1033  Group Policy\par
+\b0\fs28 1. what is group policy?\par
+Ans. Group Policy is primarily a security tool, and can be used to apply security settings to users and computers. \par
+2. what is default policy? Default Domain and domain controller\par
+Ans. Default Domain Policy: A default GPO that is automatically created and linked to the domain whenever a server is promoted to a domain controller.\par
+3. what is user configuration and computer configuration\par
+Ans. Computer Configuration: These policies apply to the local computer, and do not change per user. \par
+User Configuration: These policies apply to users on the local machine, and will apply to any new users in the future, on this local computer.\par
+4. what is GPO?\par
+Ans. Microsoft's Group Policy Object (GPO) is a collection of Group Policy settings that defines what a system will look like and how it will behave for a defined group of users. \par
+5. define software setting, windows setting, and administrative templates\par
+6. link GPO\par
+7. delegation GPO management\par
+Ans. GPO delegation is a technique that allows you to assign different permissions and roles to different users or groups for managing GPOs.\par
+8. inheritance policy\par
+Ans. Child policies inherit their settings from their parent policies.\par
+9. filtering\par
+Ans. Filters are normally used to block out undesirable traffic. \par
+10. script, templates\par
+\cf2\b\fs32  \lang9  \f1\bullet\f0\lang1033  Practical\par
+\cf0\b0\fs28 1. backup restore import and copy GPO\par
+Ans. Done In Lab.\par
+2. force group policy command\par
+Ans. Done In Lab.\par
+3. check group policy settings\par
+Ans. Done In Lab.\par
+4. configure folder redirection\par
+Ans. Done In Lab.\par
+5. software installation ---assign and publish\par
+Ans. Done In Lab.\par
+6. drive map through policy\par
+Ans. Done In Lab.\par
+\b\fs36\lang9  \f1\bullet\f0\lang1033  Certification services\par
+\b0\fs28 1. purpose of certification\par
+Ans. Microsoft Certificate Authority (CA) is part of the Windows Server operating system. A certification authority (CA) is responsible for attesting to the identity of users, computers, and organizations.\par
+2. certificate service and its role service \f1\endash certificate authority, certificate enrolment policy\f0  \f1 web service\par
+3. standalone v/s enterprise CA\par
+\f0 Ans. Standalone CAs can only issue certificates to users and computers within their own domain.\par
+ \f1\bullet\f0  Enterprise CAs can issue certificates to users and computers in multiple domains.\f1\par
+4. root CA and subordinate CA\par
+\f0 Ans. A CA certified by another is called a subordinate CA. A CA that is not certified by any other, but relies solely on its own reputation, is called a root CA.\f1\par
+5. describe certificate templates and how to use it\par
+\cf2\b\f0\fs32\lang9  \f1\bullet\f0\lang1033  Practical\par
+\cf0\b0\fs28 1. install certiface services ---certifacte authority and web enrolment\par
+Ans. Done In Lab.\par
+2. issue certificate through web enrolment and make secure web site\par
+Ans. Done In Lab.\par
+3. self-signed certificate\par
+Ans. Done In Lab.\par
+4. mange certificate---using template and issue certificate for computer\par
+Ans. Done In Lab.\par
+5. backup CA\par
+Ans. Done In Lab.\par
+\b\fs36\lang9  \f1\bullet\f0\lang1033  ADFS\par
+\b0\fs28 1. what is federation services\par
+Ans. Active Directory Federation Services (AD FS) provides simplified, secured identity federation and web single sign-on (SSO) capabilities.\par
+2. ADFS service component\par
+Ans. [1] Active Directory. This is where ADFS's identity information gets stored. \par
+[2] Federation server. It manages federated trusts between business partners by issuing security tokens. \par
+[3] Federation server proxy. \par
+[4] ADFS web server.\par
+3. ADFS requirement\par
+Ans. ADFS requires a full writable Domain Controller to function as opposed to a Read-Only Domain Controller.\par
+4. multifactor authentication\par
+Ans. In order to enable multi-factor authentication (MFA), you must select at least one extra authentication method. \par
+5. web application proxy \par
+Ans. The role of a federation server proxy is handled by a new Remote Access role service called Web Application Proxy. \par
+\cf2\b\fs32\lang9  \f1\bullet\f0\lang1033  Practical\par
+\cf0\b0\fs28 1. Install ADFS service and configure between two trusted\par
+organizations (relay party trust)\par
+Ans. Done In Lab.\par
+2. multifactor authentication\par
+Ans. Done In Lab.\par
+\b\fs36\lang9  \f1\bullet\f0\lang1033  ADRMS\par
+\b0\fs28 1. what is ADRMS\par
+Ans. Active Directory Rights Management Services allows individuals and administrators through IRM policies to specify access permissions to documents, workbooks, and presentations. \par
+2. how to secure data and type of security 3 what is service account\par
+Ans. \par
+\cf2\b\fs32\lang9  \f1\bullet\f0\lang1033  Practical\par
+\cf0\b0\fs28 1. install ADRMS and secure data (different security apply)\par
+Ans. Done In Lab.\f1\fs40\lang9\par
+}
+ 

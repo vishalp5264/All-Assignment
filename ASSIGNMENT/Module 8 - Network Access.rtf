@@ -1,0 +1,340 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\colortbl ;\red75\green172\blue198;\red188\green3\blue21;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\b\f0\fs40\lang9 Module 8 Network Access\par
+\cf2\f1\fs32\bullet\f0  Beginner Question\par
+\cf0\b0\fs28 1. Explain Switch\par
+Ans. A switch connects devices in a network to each other, enabling them to talk by exchanging data packets.\par
+2. Explain Switch Boot Sequence\par
+Ans. [1] First, the switch loads a power-on self-test (POST) program stored in ROM. POST checks the CPU subsystem. It tests the CPU, DRAM, and the portion of the flash device that makes up the flash file system.\par
+[2] Next, the switch loads the boot loader software. The boot loader is a small program stored in ROM and is run immediately after POST successfully completes.\par
+[3] The boot loader performs low-level CPU initialization. It initializes the CPU registers, which control where physical memory is mapped, the quantity of memory, and its speed.\par
+[4] The boot loader initializes the flash file system on the system board.\par
+[5] Finally, the boot loader locates and loads a default IOS operating system software image into memory and hands control of the switch over to the IOS.\par
+3. Explain Three Methods to access Switch Command Line Interface\par
+Ans. You can access the CLI through a console connection, through Telnet, a SSH, or by using the browser. You manage the switch stack and the stack member interfaces through the active switch.\par
+4. Explain and Configuring the Cisco Internet Operating System\par
+Ans. Cisco IOS (Internetwork Operating System) is a proprietary operating system that runs on Cisco Systems routers and switches. The core function of Cisco IOS is to enable data communications between network nodes.\par
+In addition to routing and switching, Cisco IOS offers dozens of additional services that an administrator can use to improve the performance and security of network traffic. Such services include encryption, authenti cation, firewall capabilities, policy enforcement, deep packet inspection, Quality of Service (QoS), intelligent routing and proxy capability. In Cisco&#39;s Integrated Services Routers (ISRs), IOS can also support call processing and unified communications services.\par
+Cisco IOS software releases are organized into what Cisco calls &quot;families&quot; and &quot;trains.&quot; Each family shares the same code base and trains are how new IOS releases are delivered.\par
+There are two types of IOS operating systems:\par
+IOS XE - runs on top of a Linux kernel. IOS XE and IOS share a lot of the same code, but IOS XR is considered to be a completely different code base.\par
+IOS XR - based on QNX a commercial Unix-like real-time operating system. IOS XR supports software-defined networking (SDN) and the embedded systems market.\par
+5. Explain Switch Port\par
+Ans. It is a smart network device that functions as a multiport network bridge. It sends data packets to designated destination ports using MAC addresses (addresses of the media access control sublayer). It receives and forwards data packets from the source to the destination device using the packet switching technology.\par
+6. Configure Basic Password Settings on a switch\par
+Ans. Type the below commands\par
+\b\f1\bullet\f0\fs32\lang1033  \b0\fs28\lang9 enable, enter\par
+\b\f1\bullet\f0\lang1033  \b0\lang9 Configure terminal, enter\par
+\b\f1\bullet\b0\f0  enable Password (Password is cisco) enter,\par
+\b\f1\bullet\b0\f0  Logout, enter.\par
+7. Configure Line Password Settings on a switch\par
+Ans. Type the below commands\par
+\b\f1\bullet\b0\f0  Enable, enter\par
+\b\f1\bullet\f0\fs32\lang1033  \b0\fs28\lang9 Configure terminal, enter\par
+\b\f1\bullet\b0\f0  Line console 0, enter\par
+\b\f1\bullet\b0\f0  Password (password is cisco) enter\par
+8. Configure Password Settings on a switch\par
+Ans. Type the below commands\par
+\b\f1\bullet\b0\f0  enable, enter\par
+\b\f1\bullet\b0\f0  Configure terminal,\par
+\b\f1\bullet\b0\f0  Enter enable Password (Password is Cisco) enter,\par
+\b\f1\bullet\b0\f0  Logout, enter.\par
+9. Configure IPv4 on a switch\par
+Ans. Type the below commands\par
+\b\f1\bullet\b0\f0  enable, enter\par
+\b\f1\bullet\b0\f0  Configure terminal,\par
+\b\f1\bullet\b0\f0  int vlan 1\par
+\b\f1\bullet\f0\lang1033  \b0\lang9 no shutdown\par
+10.Verifying IPv4 on a switch\par
+Ans. To verify the IP address set on a switch, we can use the show              int vlan 1\par
+command:\par
+\b\f1\bullet\b0\f0  show int vlan 1\par
+11.Explain Basic V LAN\par
+Ans. A virtual LAN (VLAN) is a logical overlay network that groups together a subset of devices that share a physical LAN, isolating the traffic for each group. A LAN is a group of computers or other devices in the same place -- e.g., the same building or campus -- that share the same physical network.\par
+12.Explain VTP\par
+Ans. VLAN Trunking Protocol (VTP) is a Cisco proprietary protocol that propagates the definition of Virtual Local Area Networks (VLAN) on the whole local area network. To do this, VTP carries VLAN information to all the switches in a VTP domain. VTP advertisements can be sent over 802.1Q, and ISL trunks.\par
+13.Explain CDP.\par
+Ans. The Cisco Discovery Protocol (CDP) is a network discovery tool, which assists network administrators and engineers in identifying neighboring Cisco devices, particularly those running lower-layer, transparent protocols.\par
+14.Identifying VLAN\par
+Ans. Each VLAN is identified by a single IP subnetwork and by standardized IEEE 802.1Q encapsulation. To identify which VLAN the traffic belongs to, all frames on an Ethernet VLAN are identified by a tag, as defined in the IEEE 802.1Q standard. These frames are tagged and are encapsulated with 802.1Q tags.\par
+15.Describe the basic operation of STP\par
+Ans. Spanning Tree Protocol (STP) Operations\par
+The Spanning Tree Protocol (STP) is responsible for identifying links in the network and shutting down the redundant ones, preventing possible network loops. In order to do so, all switches in the network exchange BPDU messages between them to agree upon the root bridge.\par
+16.Explain IPv4 subnetting.\par
+Ans. IPv4 allows for a variation of the network and host segments of an IP address, known as subnetting, can be used to physically and logically design a network.\par
+17.What is subnet mask?\par
+Ans. A subnet mask is a 32-bit number created by setting host bits to all 0s and setting network bits to all 1s. In this way, the subnet mask separates the IP address into the network and host addresses.\par
+18.Explain binary decimal hexadecimal with example\par
+Ans. A byte with four bits off and four bits on is expressed in binary as 00001111, and converts to f in hexadecimal, while byte of eight bits "on" is 11111111 in binary and ff in hexadecimal.\par
+19.Describe the Need for Public IPv4 and Private IP Addressing\par
+Ans. A public IP address identifies you to the wider internet so that all the information you&#39;re searching for can find you. A private IP address is used within a private network to connect securely to other devices within that same network.\par
+20.Explain Subnet Prefix\par
+Ans. Subnet masks (IPv4) and prefixes (IPv6) identify the range of IP addresses that make up a subnet, or group of IP addresses on the same network.\par
+21.Explain How to Connect Router with Switch\par
+Ans. Connect an ethernet cable to one of the ports at the back of the switch, then connect the other end to one of the ethernet ports at the back of the router.\par
+22.Explain Routing Basics with command\par
+23.Configuration basic IP address in fig.\par
+24.Create Static Routes\par
+Ans. Open Command Prompt and run \ldblquote route add\rdblquote  followed by a destination network address, a subnet mask, and a gateway address. \par
+25.Verifying IP Routing\par
+Ans. Use the Netstat ROUTE/-r command to display routes to the network. Verify whether TCP/IP has a route to the destination. For information about the Netstat ROUTE/-r command, see z/OS Communications Server: IP System Administrator&#39;s Commands. If there is no route, proceed to step 3.\par
+26.Explain EIGRP\par
+Ans. Enhanced Interior Gateway Routing Protocol (EIGRP) is a network protocol that enables routers to exchange information more efficiently than earlier network protocols, such as Interior Gateway Routing Protocol (IGRP) or Border Gateway Protocol (BGP). EIGRIP grew out of Cisco&#39;s efforts in the 1990s to address the limitations of these protocols. For example, BGP was slow to find an alternate path if a network link went down (slow convergence), making it difficult to support Cisco&#39;s globally distributed workforce. In addition, the protocol didn&#39;t provide route summarization. As a result, administrators had to change routing tables manually to accommodate geographic expansions, a time-consuming process\par
+27.Explain OSPF Basics\par
+Ans. The OSPF protocol is a link-state routing protocol, which means that the routers exchange topology information with their nearest neighbors. The topology information is flooded throughout the AS, so that every router within the AS has a complete picture of the topology of the AS.\par
+28.Explain OSPF Area\par
+Ans. By definition an OSPF area is a collection of networks, not a collection of routers. A backbone network segment is an IP subnet that belongs to the area identified by 0.0. 0.0. Areas that are not physically connected to the backbone are logically connected by a backbone ABR using an OSPF virtual link\par
+29.Explain DR/BR Selection\par
+Ans. DR and BDR rules:\par
+Router is highest OSPF priority will become DR and router with second-highest priority will become BDR. If the priority of the routers are same then, the router with the highest Router ID is selected as DR and the router with second-highest Router ID is selected as BDR.\par
+30.Explain OSPF\par
+Ans. The OSPF (Open Shortest Path First) protocol is one of a family of IP Routing protocols, and is an Interior Gateway Protocol (IGP) for the Internet, used to distribute IP routing information throughout a single Autonomous System (AS) in an IP network.\par
+31.Explain Describe IPv6 addresses\par
+Ans. An IPv6 address is a 128-bit alphanumeric value that identifies an endpoint device in an Internet Protocol Version 6 (IPv6) network. IPv6 is the successor to a previous addressing infrastructure, IPv4, which had limitations IPv6 was designed to overcome.\par
+32.What is 6to4 tunnel?\par
+Ans. 6to4 tunnels are configured between border routers or between a border router and a host. The simplest deployment scenario for 6to4 tunnels is to interconnect multiple IPv6 sites, each of which has at least one connection to a shared IPv4 network. \par
+This IPv4 network could be the global Internet or a corporate backbone.\par
+33.Explain Wireless Technology\par
+Ans.  Wireless technology is tech that allows people to communicate or data to be transferred from one point to another without using cables or wires.\par
+34.Explain Basic Wireless Devices\par
+Ans. A wireless device can refer to any kind of communications equipment that does not require a physical wire for relaying information to another device. Wireless headphones fitted with a receiver use either radio frequency (RF) or infrared technology to communicate with a transmitter that is connected to the sound source, say a television. In most cases, however, when someone refers to a wireless device, they are speaking of a networking device that can pass data to other wireless network gear without being physically connected.\par
+35.Explain Wireless Security\par
+Ans. Wireless security is the prevention of unauthorized access or damage to computers or data using wireless networks, which include Wi-Fi networks. The term may also refer to the protection of the wireless network itself from adversaries seeking to damage the confidentiality, integrity, or availability of the network. The most common type is Wi-Fi security, which includes Wired Equivalent Privacy (WEP) and Wi-Fi\par
+Protected Access (WPA). WEP is an old IEEE 802.11 standard from 1997. [1] It is a notoriously weak security standard: the password it uses can often be cracked in a few minutes with a basic laptop computer and widely available software tools. [2] WEP was superseded in 2003 by WPA, a quick alternative at the time to improve security over WEP. The current standard is WPA2; [3] some hardware cannot support WPA2 without firmware upgrade or replacement. WPA2 uses an encryption device that encrypts the network with a 256-bit key; the longer key length improves security over WEP. Enterprises often enforce security using a certificate-based system to authenticate the connecting device, following the standard 802.11X.\par
+36.Explain WPA or WPA2 Pre-Shared Key\par
+Ans. Wi-Fi Protected Access Pre-Shared Key or WPA-PSK is a system of encryption used to authenticate users on wireless local area networks. It&#39;s typically utilized by telecom companies for end user access in home local area networks. WPA-PSK may also be called WPA Personal.\par
+Wi-Fi Protected Access 2\f1\emdash\f0 Pre-Shared-Key, often known as WPA2-Personal, is a type\lang1033  \lang9 of encryption that uses either the TKIP (Temporal Key Integrity Protocol) or AES\lang1033  \lang9 (Advanced Encryption Standard) encryption mechanism to safeguard networ\lang1033 k \lang9 access and data transfer.\par
+\cf2\b\f1\fs32\bullet\f0\lang1033  \lang9 Intermediate Question\tab\cf0\b0\fs28\par
+1. Explain Logging into a Switch\par
+Ans. Log in to a Network Switch via Telnet... \par
+\b\f1\bullet\b0\f0  Connect the management port of the switch to the RJ45 port of the PC with an Ethernet cable like Cat5e and Cat6 cables.\par
+\b\f1\bullet\b0\f0  Power on the PC. ...\par
+\b\f1\bullet\b0\f0  Type the username and password (admin/admin) in the login interface, then move on to the configuration menu as shown below.\par
+2. Explain Switch User Mode, Enable (Privileged) Mode and Global Configuration Mode\par
+Ans. To enter global configuration mode, enter the configure command. Global configuration From privileged EXEC mode, enter the configure command. To exit to privileged EXEC mode, enter the exit or end command, or press Ctrl-Z. To enter interface configuration mode, enter the interface configuration command.\par
+3. Gathering Switch Basic information\par
+Ans. \par
+4. Explain SSH\par
+Ans. SSH or Secure Shell is a network communication protocol that enables two computers to communicate (c.f http or hypertext transfer protocol, which is the protocol used to transfer hypertext such as web pages) and share data.\par
+5. Configure SSH Setting On a Switch\par
+Ans. [1] enable\par
+[2] configure terminal\par
+[3] hostname hostname\par
+[4] ip domain-name domain_name\par
+[5] crypto key generate rsa\par
+[6] end\par
+[7] show running-config\par
+[8] copy running-config startup-config\par
+6. Explain Telnet Setting\par
+Ans. Telnet is a network protocol used to virtually access a computer and to provide a two-way, collaborative and text-based communication channel between two machines. It follows a user command Transmission Control Protocol/Internet Protocol (TCP/IP) networking protocol for creating remote sessions.\par
+7. Verifying Switch Interface Status\par
+Ans. Checking Interfaces Status\par
+show interfaces status command with no arguments. Specify a particular module number to see information on the ports on that module only. Enter both the module number and the port number to see detailed information about the specified port.\par
+8. Configure VLAN\par
+Ans. VLAN Configure command\rquote s\par
+\b\f1\bullet\b0\f0  Enable, enter\par
+\b\f1\bullet\b0\f0  Configure terminal, enter\par
+\b\f1\bullet\b0\f0  VLAN (VLAN number), enter\par
+\b\f1\bullet\b0\f0  Name \ldblquote Aryan\rdblquote , enter\par
+\b\f1\bullet\b0\f0  Interface VLAN (VLAN id), enter\par
+\b\f1\bullet\b0\f0  Ip address 192.168.0.1 255.255.255.0, enter\par
+\b\f1\bullet\b0\f0  No shutdown, enter\par
+9. Verifying VLAN\par
+Ans. Use the show vlan command to verify your VLAN configuration. This command displays all switchports and their associated VLAN as well as the VLAN status and some extra parameters that relate to Token Ring and FDDI trunks.\par
+10.Configure VLAN Trucking\par
+Ans. [1] enable\par
+[2] configure terminal\par
+[3] interface (interface-id)\par
+[4] switchport mode access\par
+[5] switchport access trunk\par
+[6] switchport trunk allowed vlan (vlan-id)\par
+[7] copy running-config startup-config\par
+11.Give Reasons for Using VLANs\par
+Ans. VLANs can be used for different groups of users, departments, functions, etc., without needing to be in the same geographical area. VLANs can help reduce IT cost, improve network security and performance, provide easier management, as well as ensuring network flexibility.\par
+12.Static VLANs\par
+Ans. A static VLAN is a group of ports designated by the switch as belonging to the same broadcast domain. That is, all ports carrying traffic for a particular subnet address would belong to the same VLAN. Using a VLAN, you can group users by logical function instead of physical location.\par
+13.Dynamic VLANs\par
+Ans. Dynamic VLANs, as opposed to Static VLANs, do not require the network administrator to manually assign each switchport to a specific VLAN. But instead, a central server called VLAN Membership Policy Server (VMPS) is used to handle port configuration of every switch participating in a VLAN network.\par
+14.Brief explain STP Timer\par
+Ans. The hello timer is the time interval between each Bridge Protocol Data Unit (BPDU) that is sent on a port. Defaut Spanning Tree Protocol (STP) hello timer is 2 seconds. You can adjust Spanning Tree Protocol (STP) hello timer to any value between 1 and 10 sec.\par
+15.Explain how Switches Calculate Their Root Cost\par
+Ans. In the BPDU you can see a field called root path cost. This is where each switch will insert the cost of its shortest path to the root bridge. Once the switches found out which switch is declared as root bridge they will look for the shortest path to get there.\par
+16.Configure STP on Switch\par
+17.Verifying STP on a Switch\par
+18.What is Port Security how to find Port with command?\par
+19.Classified Default subnet mask for Class A, B, C, D\par
+Ans. The three default subnet masks are 255.0. 0.0 for Class A, 255.255. 0.0 for class B, and 255.255. 255.0 for Class C.\par
+20.Explain Classless Inter-Domain Routin\par
+Ans. Classless Inter-Domain Routing (CIDR or supernetting) is a way to combine several class-C address ranges into a single network or route.\par
+21.How to define subnetting address of class A, B, C, D\par
+22.Explain Classless and Class full Addressing\par
+Ans. Classful addressing is a technique of allocating IP addresses that divides them into five categories. Classless addressing is a technique of allocating IP addresses that is intended to replace classful addressing in order to reduce IP address depletion.\par
+23.Details of VLSM (variable length Subnet Mask)\par
+Ans. Variable Length Subnet Mask (VLSM) is a subnet -- a segmented piece of a larger network -- design strategy where all subnet masks can have varying sizes. This process of &quot;subnetting subnets&quot; enables network engineers to use multiple masks for different subnets of a single class A, B or C network.\par
+24.Explain Static Routing\par
+Ans. Static routing is a form of routing that occurs when a router uses a manually- configured routing entry, rather than information from dynamic routing traffic.\par
+25.Explain Default Routing\par
+Ans. A default route is the route that takes effect when no other route is available for an IP destination address. If a packet is received on a routing device, the device first checks to see if the IP destination address is on one of the device&#39;s local subnets.\par
+26.Configuring IP routing\par
+Ans. The dest-ip-addr variable is the route destination. The dest-mask variable is the network mask for the route destination IP address. Alternatively, you can specify the network mask information by entering a forward slash followed by the number of bits in the network mask. For example, you can enter 10.0.\par
+27.Configure VLAN Routing\par
+Ans.\par
+28.Routing Protocol Metric\par
+Ans. A metric is a measurable value that is assigned by the routing protocol to different routes based on the usefulness of that route. In situations where there are multiple paths to the same remote network, the routing metrics are used to determine the overall \ldblquote cost\rdblquote  of a path from source to destination.\par
+29.Explain how OSPF calculates the cost for a route\par
+Ans. OSPF uses a reference bandwidth of 100 Mbps for cost calculation. The formula to calculate the cost is reference bandwidth divided by interface bandwidth. For example, in the case of Ethernet, it is 100 Mbps / 10 Mbps = 10. cost is used on the interface, it overrides this formulated cost.\par
+30.Define Benefits and Uses of IPv6\par
+Ans. IPv6 enables the increased use of summary routes and hierarchical routing. IPv6 fragmentation and reassembly are handled by the sender and receiver, not routers on the path, making routing even more efficient. Instead of broadcasting to all nodes on a Layer 2 domain, multicast is used.\par
+31.Define this IPV6 Address\par
+Ans. An IPv6 address is a 128-bit alphanumeric value that identifies an endpoint device in an Internet Protocol Version 6 (IPv6) network. IPv6 is the successor to a previous addressing infrastructure, IPv4, which had limitations IPv6 was designed to overcome.\par
+32.Explain IPv6 Routing Protocols\par
+Ans. Routing in IPv6 is almost identical to IPv4 routing under CIDR. The only difference is the addresses are 128-bit IPv6 addresses instead of 32-bit IPv4 addresses. With very straightforward extensions, all of IPv4s routing algorithms, such as OSPF, RIP, IDRP, IS-IS, can be used to route IPv6.\par
+33.Explain Wireless Access Points\par
+Ans. A wireless access point (WAP) is a hardware device or configured node on a local area network (LAN) that allows wireless capable devices and wired networks to connect through a wireless standard, including Wi-Fi or Bluetooth. WAPs feature radio transmitters and antennae, which facilitate connectivity between devices and the Internet or a network.\par
+34.Define IEEE 802.11 Transmissions\par
+Ans. IEEE 802.11 is part of the IEEE 802 set of local area network (LAN) technical standards, and specifies the set of media access control (MAC) and physical layer (PHY) protocols for implementing wireless local area network (WLAN) computer communication.\par
+35.Explain Independent Basic Service Set (Ad Hoc)\par
+Ans. A Independent Basic Service Set (IBSS) forms an ad hoc, independent, self- contained network with station-to-station traffic flowing directly, receiving data transmitted by another station, and only filtering traffic based on the MAC address of the receiver (see Figure 5.3).\par
+36.Explain How to Secure Wireless Network\par
+Ans. What can you do to minimize the risks to your wireless network\par
+Change default passwords.\par
+Restrict access.\par
+Encrypt the data on your network.\par
+Protect your Service Set Identifier (SSID).\par
+Install a firewall.\par
+Maintain antivirus software.\par
+Use file sharing with caution.\par
+Keep your access point software patched and up to date.\par
+\cf2\b\f1\bullet\f0  Advance question\cf0\b0\par
+1. Setting administrative factions\par
+Ans.\par
+2. Setting hostnames\par
+Ans. Enable\par
+Conf t\par
+Hostname (any name )\par
+exit.\par
+3. Setting banners\par
+Ans. Enable\par
+Conf t\par
+banner motd Unauthorized access to this device is prohibited\par
+exit\par
+4. Setting passwords\par
+Ans. Enable\par
+Conf t\par
+Enable password (any passsword)\par
+exit\par
+5. Viewing, saving, and erasing configurations\par
+Ans. Viewing :- show runing-config\par
+Saving :- write\par
+Erasing :- erase startup-config\par
+6. Configure an IP address on a switch\par
+Ans. Enable\par
+Conf t\par
+Int vlan1\par
+Ip add (write ip address)\par
+exit\par
+7. Configuring SSH\par
+Ans. Enable\par
+Conf t\par
+Vty line 015\par
+transport input ssh\par
+login local\par
+ip ssh version 2\par
+exit\par
+8. Configuring Telnet\par
+Ans. \b\f1\bullet\f0\lang1033  \b0\lang9 In System i Navigator, expand your system > Network > Servers > TCP/IP.\par
+\b\f1\bullet\f0\lang1033  \b0\lang9 In the right pane, in the Server Name column, locate Telnet.\par
+\b\f1\bullet\f0\lang1033  \b0\lang9 Confirm that Started appears in the Status column.\par
+\b\f1\bullet\f0\lang1033  \b0\lang9 If the server is not running, right-click Telnet and click Start.\par
+9. Explain Layer 3 Switch\par
+Ans. A Layer 3 switch is basically a switch that can perform routing functions in addition to switching. A client computer requires a default gateway for layer 3 connectivity to remote subnets.\par
+10. Describe Dynamic IP configuration with DHCP\par
+Ans. With dynamic IP configurations, client devices lease an IP configuration from a Dynamic Host Configuration Protocol (DHCP) server. This server is configured with a pool of available IPs and other settings. Clients contact the server and temporarily borrow an IP address configuration.\par
+11. Explain 802.1q Protocol\par
+Ans. 802.1Q is the networking standard that defines virtual LANs (VLANs) on an Ethernet network. VLANs are logical networks that share a single physical connection using 802.1Q tagged frames. An Ethernet frame can contain an 802.1Q tag, with fields that specify VLAN membership and user priority.\par
+12. Explain the Switch Port Mode Command\par
+Ans. The switchport mode command allows us to configure the trunking operational mode on a Layer 2 interface on a Cisco IOS device. By entering the command switchport mode access we configure the interface to operate in access mode. This ensures that the interface will pass traffic for a single VLAN only.\par
+13. Explain the Removing Command of VLAN\par
+Ans. Enable\par
+Conf t\par
+No vlan (vlan id)\par
+exit\par
+14. Describe Inter VLAN Routing\par
+Ans. Inter-VLAN routing refers to the movement of packets across the network between hosts in different network segments. VLANs make it easier for one to segment a network, which in turn improves the performance of the network and makes it more flexible, since they are logical connections.\par
+15. Explain Dynamic Routing\par
+Ans. Dynamic routing, also called adaptive routing, is a process where a router can forward data via a different route for a given destination based on the current conditions of the communication circuits within a system.\par
+16. Explain routing loop\par
+Ans. A routing loop is a common problem with various types of networks, particularly computer networks. They are formed when an error occurs in the operation of the routing algorithm, and as a result, in a group of nodes, the path to a particular destination forms a loop.\par
+17. Configure and verify inter switch connectivity\par
+Ans. Int (interface id)\par
+Switchport mode access\par
+Switchport access trunk\par
+Switchport trunk allowed vlan (vlan id)\par
+Exit\par
+18. Configure and Verify VLAN Trucking\par
+Ans. Int (interface id)\par
+Switchport mode access\par
+Switchport access trunk\par
+Switchport trunk allowed vlan (vlan id)\par
+Exit\par
+19. Explain and configure PAGP\par
+Ans. Port Aggregation Protocol (PAgP) is a Cisco proprietary protocol which is used for the automated, logical aggregation of Ethernet switch ports, known as an Ether Channel. \par
+20. Configuring Ether Channel\par
+Ans. Enable\par
+Conf t\par
+Interface port-channel (channel number)\par
+Ip add (ip add and mask)\par
+Exit\par
+Interface range (interface id one point to second point)\par
+Channel-group (group number)\par
+exit\par
+21. Verifying Ether Channel\par
+22. Explain PAGP and LACP\par
+Ans. LACP is open standard and supported by most of vendors, while PAGP is Cisco proprietary only used between Cisco devices.\par
+23. Configure and Verifying IPv4 Addressing and Subnetting\par
+Ans. Done In Lab.\par
+24. Explain the Network Address and Broadcast Address\par
+Ans. Network address is first address in the network and it is used for identification network segment. All the IP addresses, using the same network address part, are in the same network segment. Because network address is first address in the network, it can not be random IP address, but it must mach with network mask in a binary view, for last bits in the network address must be zeros, as long as mask has zeros. \par
+Broadcast address is the last address in the network, and it is used for addressing all the nodes in the network at the same time. It means that IP packet, where the destination address is broadcast address, is sent to all nodes of the IP network. It is important for remote announcements in network segment. In some cases it is used for attacking purposes by hackers or can cause problems in bigger network segments.\par
+25. Explain Classful Network\par
+Ans. A classful network is an obsolete network addressing architecture used in the Internet from 1981 until the introduction of Classless Inter-Domain Routing (CIDR) in 1993. The method divides the IP address space for Internet Protocol version 4 (IPv4) into five address classes based on the leading four address bits.\par
+26. Practice Example #5B: 255.255.255.0 (/24)\par
+Ans. Done In Lab.\par
+27. Practice Example #2A: 255.255.240.0 (/20)\par
+Ans. Done In Lab.\par
+28. Given the no of hosts as 126, 50, 20 and 5 Find IP address and subnet\par
+mask using class (192.168.1.0)\par
+Ans. Done In Lab.\par
+29. Explain this Network\par
+Ans. Done In Lab.\par
+30.Put right addressing in fig.\par
+Ans. Done In Lab.\par
+31.Explain Routed and Routable Protocol\par
+Ans. A protocol that defines a packet structure and logical addressing, allowing routers to forward or route the packets.\par
+32.Explain IGP\par
+Ans. An interior gateway protocol (IGP) is a dynamic route update protocol used between routers that run on TCP/IP hosts within a single autonomous system. The routers use this protocol to exchange information about IP routes. Some of the more common interior gateway protocols are: Routing Information Protocol (RIP)\par
+33.Explain Distance Vector, link state and Hydride\par
+Ans. Distance vector :- The distance vector routing algorithm works by having each router maintain a routing table, giving the best-known distance from source to destination and which route is used to get there. These tables are updated by exchanging the information with the neighbor having a direct link.\par
+Link state :- The Link State Routing Algorithm is an interior protocol used by every router to share the information or knowledge about the rest of the routers on the network. The link state routing algorithm is a distributed algorithm using which every router computes its routing table.\par
+Hybrid :- Hybrid Access Networks refer to a special architecture for broadband access networks where two different network technologies are combined to improve bandwidth. A frequent motivation for such Hybrid Access Networks to combine one xDSL network with a wireless network such as LTE.\par
+34.Explain and Verifying OSPFv2\par
+35.Explain Wildcard Mask\par
+Ans. A wildcard mask is a mask of bits that indicates which parts of an IP address are available for examination. In the Cisco IOS, they are used in several places, for example: To indicate the size of a network or subnet for some routing protocols, such as OSPF.\par
+36.Explain Address Types and Special Addresses\par
+Ans. There are three types of participant address: postal, email, and web address. Three types of address can be recorded for participants: postal address, email address, and web address.\par
+As in classful addressing, some blocks of addresses or some addresses in each block have been reserved for the special purpose &amp; that&#39;s why they are termed as special IP addresses. The special addresses of classful addressing were inherited by the classless addressing when it was introduced in 1996.\par
+37.Configuring Cisco Routers with IPv6\par
+38.Explain RIPng, EIGRPv6, OSPFv3\par
+39.Creating a 6to4 tunnel\par
+Ans. 6to4 tunnels are configured between border routers or between a border router and a host. The simplest deployment scenario for 6to4 tunnels is to interconnect multiple IPv6 sites, each of which has at least one connection to a shared IPv4 network. This IPv4 network could be the global Internet or a corporate backbone.\par
+40.Explain 802.11 Committees and subcommittees\par
+Ans. Committees :- The IEEE 802 LAN/MAN Standards Committee develops and maintains networking standards and recommended practices for local, metropolitan, and other area networks, using an open and accredited process, and advocates them on a global basis.\par
+Subcommittees :-\par
+41.Explain Wireless Topologies\par
+Ans. The topology of a wireless network is simply the way network components are arranged. It describes both the physical layout of devices, routers, and gateways, and the paths that data follows between them.\par
+\par
+\par
+\par
+}
+ 

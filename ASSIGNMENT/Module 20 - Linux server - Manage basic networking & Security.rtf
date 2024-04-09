@@ -1,0 +1,147 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\colortbl ;\red26\green106\blue104;\red132\green30\blue15;\red128\green0\blue0;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\b\f0\fs56\lang9 Module :20\par
+\cf0\fs40 Linux server - Manage basic networking & Security\cf2\fs32  \par
+\f1\fs36\bullet\f0\lang1033  \lang9 Assignment Level Basic\par
+\cf0\b0\fs28 1. Full form of \ldblquote  ping \ldblquote\par
+Ans. Packet InterNet Groper.\par
+2. What is the use of \ldblquote  ping \ldblquote  command ?\par
+Ans. Ping is the primary TCP/IP command used to troubleshoot connectivity, reachability, and name resolution.\par
+3. What is the meaning of \ldblquote prefix\rdblquote  is ?\par
+Ans. It is assumed that the software for each installation is all under a single directory whose name is assigned to an environment variable  called PREFIX.\par
+4. Which protocol is used in PING ?\par
+Ans. Ping uses ICMP(Internet Control Message Protocol).\par
+5. Port number of ICMP ?\par
+Ans. ICMP has no concept of ports, as TCP and UDP do, but instead uses types and codes. Commonly used ICMP types are echo request and echo reply (used for ping) and time to live exceeded in transit (used for traceroute).\par
+6. What is network ID and broadcast ID in IP range ?\par
+Ans. The network ID is made up of a series of numbers, and it is usually written in the form of an IP address. The broadcast address is a special address that is used to send messages to all devices on a network. It is used to broadcast messages to all devices on a network, rather than just one specific device.\par
+7. What is gateway ?\par
+Ans. A gateway is works as the entrance or a door between two networks.\par
+8. What is SeLinux?\par
+Ans.  Selinux is a part of the Linux security kernel that acts as a protective agent on servers.\par
+9. Wright down the list of SELINUX modes and their uses\par
+Ans. Ans. SELinux (Security-Enhanced Linux) offers several modes of operation that determine how it enforces access controls and policies on a system. Each mode serves different purposes and provides varying levels of security. The common SELinux modes are:\par
+[1] Enforcing Mode: In this mode, SELinux actively enforces the access control policies defined in its security policies. It denies any actions that violate these policies and generates audit logs for analysis. Enforcing mode provides strong security by preventing unauthorized actions and access.\par
+[2] Permissive Mode: Permissive mode also enforces access control policies, but it doesn't deny any actions. Instead, it generates audit logs for actions that would have been denied in enforcing mode. This mode is useful for testing and troubleshooting because it allows you to see how SELinux policies would affect system behavior without blocking any actions.\par
+[3] Disabled Mode: In disabled mode, SELinux is effectively turned off, and no access control policies are enforced. This mode might be used if you encounter compatibility issues or need to troubleshoot SELinux-related problems. However, it significantly reduces the security benefits SELinux provides.\par
+\b\f1\bullet\f0\lang1033  \b0\lang9 These modes are set at the kernel level and can be configured during system boot or runtime. System administrators can choose the appropriate mode based on their security requirements and the specific needs of their environment.\par
+\b\f1\bullet\f0\lang1033  \b0\lang9 It's important to note that while SELinux can enhance system security, it also requires proper configuration and management. Enabling SELinux in enforcing mode without understanding its policies and behaviors can lead to unexpected issues. Therefore, administrators should be familiar with SELinux concepts and consider their organization's security needs when configuring SELinux modes.\par
+10.In which mode, reboot is required after modification?\par
+Ans. Ans. In the context of SELinux modes, changing between "Enforcing Mode" and "Permissive Mode" usually requires a reboot for the changes to take full effect. This is because SELinux mode changes involve modifications to the kernel's security policy, and a reboot ensures that the new policy is applied consistently throughout the system.\par
+\b\f1\bullet\f0\lang1033  \b0\lang9 When transitioning from "Enforcing Mode" to "Permissive Mode," or vice versa, it's recommended to reboot the system to ensure that SELinux operates as intended with the chosen mode.\par
+\b\f1\bullet\f0\lang1033  \b0\lang9 However, it's important to consult your specific Linux distribution's documentation, as some distributions may provide tools or procedures that allow you to change SELinux modes without a reboot or with minimal disruption. Always consider the impact on your system and any services running before making changes to SELinux modes.\par
+11.What is SeLinux Booleans\par
+Ans. Ans. SELinux Booleans are a feature within SELinux (Security-Enhanced Linux) that allows system administrators to fine-tune and customize the security policies applied to the system. Booleans are binary values (either "on" or "off") that represent specific security settings or permissions for various system behaviors. By toggling these Booleans, administrators can modify the behavior of SELinux policies without needing to write or modify complex policy rules.\par
+12.Which command is used to check the selinux contents\par
+Ans. Ans. To check the SELinux context and security-related information for files, you can use the ls command with the -Z option. This option displays the SELinux context associated with each file or directory. Here's the command: ls -Z <filename>.\par
+13.What is firewall ? why we use\par
+Ans. A firewall is a way to protect machines from any unwanted traffic from outside. \par
+14.What is firewall?\par
+Ans. A firewall is a network security device that monitors traffic to or from your network.\par
+15.Which command is used for graphically manage firewall?\par
+Ans. The command used for graphically managing the firewall on many Linux distributions is often specific to the desktop environment being used. Here are some examples of commands that can be used to launch graphical firewall management tools on popular desktop environments:\par
+[1] GNOME (Gnome Control Center):\tab gnome-control-center firewall\par
+[2] KDE (System Settings):\tab systemsettings5\par
+[3] XFCE (GUI Firewall Management):\tab sudo gufw\par
+[4] Cinnamon (Firewall Configuration):\tab firewall-config\par
+[5] Unity (Firewall Configuration):\tab firewall-config\par
+[6] Mate (Firewall Configuration):\tab firewall-config\par
+16.Which command is used for command line manage firewall?\par
+Ans. The command-line tool commonly used to manage the firewall in Linux systems is iptables. However, keep in mind that iptables is a powerful but relatively complex utility that provides a way to configure and manage packet filtering and network address translation rules in the Linux kernel's netfilter framework.\par
+17.What is the use of \ldblquote  \f1\endash get-default-zone \ldblquote  ?\par
+Ans. The --get-default-zone option is used with the firewall-cmd command, which is a command-line utility for managing firewalld, a dynamic firewall management tool in Linux. Firewalld provides a way to manage and configure network firewall rules and settings on Linux systems.\par
+\b\bullet\f0\lang1033  \b0\f1\lang9 When you use the --get-default-zone option with the firewall-cmd command, it displays the currently set default zone for firewalld. In firewalld, zones are predefined sets of rules and configurations that define the level of trust and security for different network interfaces or connections.\par
+\cf3\b\fs36\bullet\f0\lang1033  Assignment Level Intermediate to Advance\par
+\cf0\b0\fs28 1. Which command is used to manage IP addressing in inux 7.0 ?\par
+Ans. In Linux 7.0 and later versions, the ip command is commonly used to manage IP addressing and network configurations. The ip command is a powerful and versatile tool for configuring network interfaces, routes, and various networking parameters. It replaces the older ifconfig and route commands and offers more advanced features and flexibility.\par
+2. By default which name will assign to network card in RHEL ?\par
+And. Linux network interfaces used the naming convention eth [0123\'85]. However, in RHEL7/CentOS7, the default network interface name is based on firmware, topology, and location information.\par
+3. Which command is used to add/create a new network connection?\par
+Ans. In Red Hat Enterprise Linux (RHEL) and many other Linux distributions, you can use the nmcli command to manage network connections, including adding and creating new network connections. nmcli stands for Network Manager Command-Line Interface and provides a powerful way to interact with Network Manager, which is the default network management service on many Linux systems.\par
+4. From which command is used to show the network connection?\par
+Ans. nmcli connection show command is to show the network connection.\par
+\cf3\b\f1\fs36\lang9\bullet\f0\lang1033  Task: 1\par
+\cf0\b0\fs28 1. Open graphically IP management\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+2. Check current lan cpnnection\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+3. Add new cpnnection name \ldblquote KAMAL\rdblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+4. Connect \ldblquote eth0\rdblquote  to this new connection \ldblquote KAMAL\rdblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+5. Up the new connection \ldblquote KAMAL\rdblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+6. Show the info about the new connection\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+7. Assign and append new IP on new connection \ldblquote KAMAL\rdblquote\\\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+8. Reload the conenctions\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+9. Again create new connection with same name \ldblquote KAMAL\rdblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+10.Delete both new connections one by one.\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+11.Assign new hostname\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+12.Restart the NetworkManager\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+\cf3\b\f1\fs36\lang9\bullet\f0\lang1033  Task :2\par
+\cf0\b0\fs28 13.Check current selinux mode\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+14.Change selinux mode into \ldblquote permissive\rdblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+15.Change selinux mode into \ldblquote Enforcing\rdblquote\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+16.Start server machine.\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+17.Change the default selinux mode to permissive via VIM\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+18.Check selinux contents on process\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+19.Install httpd.services\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+20.Check selinux contents on /var/www/html\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+21.Create new .html file in /var/www/html\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+22.Open this file in firefox and check is accessible or not\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+23.Delete this .html file\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+24.Create new .html file on desktop\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+25.Move this file in /var/www/html\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+26.Now, open this file and check is accessible or not\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+27.Update selinux contents on this files\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+28.See the status of all booleans\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+29. \ldblquote ON\rdblquote  the booleans of httpd_use_nfs\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+30.Get a list of only modified Boolean\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+31.Get details of all selinux logs\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+\cf3\b\f1\fs36\lang9\bullet\f0\lang1033  Task:3\par
+\cf0\b0\fs28 1. Show current default zone ?\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+2. Show all firewall zone\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+3. Get list of services which is running in current zone\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+4. Show the all profile of all zone\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+5. Remove ssh services\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+6. Reload the firewall\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+7. Add ssh services in firewall\par
+\lang9 Ans. Command Perform In Our Lab system.\lang1033\par
+8. Graphicallymanagethefirewall\par
+\lang9 Ans. Command Perform In Our Lab system.\par
+\f1\par
+}
+ 

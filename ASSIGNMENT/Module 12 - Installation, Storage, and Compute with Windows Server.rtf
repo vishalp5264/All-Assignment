@@ -1,0 +1,217 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\colortbl ;\red190\green35\blue7;\red51\green175\blue189;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\b\f0\fs48\lang9 TERM-3\par
+\cf1\fs44 Microsoft Server \cf0 Assignment\par
+
+\pard\sa200\sl276\slmult1\cf2\fs36 Module 12 Installation, Storage, and Compute with Windows Server\par
+\cf0\f1\bullet\f0\lang1033  \lang9 Install Windows Servers 2016\par
+\b0\fs28 1. Windows Server 2016 installation requirements\par
+Ans. For starters, an organization will need a 1.4Ghz 64-bit processor, 512 MB of RAM, and 32 GB of disk space. \par
+2. Describe Windows Server 2016 editions\par
+Ans. [1] Windows Server 2016 Datacenter\par
+[2] Windows Server 2016 Standard\par
+[3]  Windows Server 2016 Essentials\par
+3. From which menu we can add and remove server roles?\par
+Ans. On the Manage menu in Server Manager, click add Roles and Features.\par
+4. What is workgroup?\par
+Ans.  A workgroup is used to share personal data as it is less secure.\par
+5. What is domain?\par
+Ans. A domain, in the context of networking, refers to any group of users, workstations, devices, printers, computers and database servers that share different types of data via network resources.\par
+6. What is powershell ?\par
+Ans. PowerShell is a cross-platform task automation solution made up of a command-line shell, a scripting language, and a configuration management framework. \par
+7. up gradation v/s migration\par
+Ans. In simple terms, a migration is a direct translation of a previous control system onto a new one, while an upgrade introduces new features, modernizations, or other innovative technologies.\par
+8. license and activation model\par
+Ans. The activation server validates the activation key, generates the corresponding license, then records the transaction in its database. \par
+9. Precaution of up gradation\par
+Ans. [1] Always start with a verified data backup\par
+[2]  Consider creating an image backup\par
+[3]  Don\rquote t make multiple simultaneous changes\par
+[4] Monitor logs closely after making changes\par
+[5] Confirm the OS\par
+[6]  Confirm the chassis supports the upgrade\par
+[7]  Don\rquote t assume plug-and-play\par
+[8]  Optimize performance\par
+[9] You get what you pay for\par
+[10] Document changes\par
+10. Migration limitation\par
+Ans. Migrants may be exploited. \par
+11. What is the advantages of server core\par
+Ans. A Server Core installation provides a minimal environment for running specific server roles, which reduces the maintenance and management requirements and the attack surface for those server roles.\par
+12. What is Nano server\par
+Ans. Nano Server is a remotely administered server operating system optimized for private clouds and datacenters.\par
+13. Purpose of Nano server\par
+Ans. Nano Server is a remotely administered server operating system optimized for private clouds and datacenters.\par
+14. Compare GUI v/s core v/s Nano server\par
+Ans. Nano Server is essentially a stripped-down version of the full Windows Server OS, as it is headless\f1\emdash it does not have a GUI\emdash and lacks the core server components.\f0\par
+\cf1\b\f1\fs32\bullet\f0  Practical\par
+\cf0\b0\fs28 1. Install server 2016 GUI\par
+Ans. Done In Lab.\par
+2. Install server 2016 server core\par
+Ans. Done In Lab.\par
+3. Assign dual IP address on lan card\par
+Ans. Done In Lab.\par
+4. Upgrade server 2012 to server 2016\par
+Ans. Done In Lab.\par
+5. Change computer name\par
+Ans. Done In Lab.\par
+6. install nano server\par
+Ans. Done In Lab.\par
+7. manage and configure a nano server\par
+Ans. Done In Lab.\par
+8. configure network in nano server\par
+Ans. Done In Lab.\par
+9. join nano server in domain\par
+Ans. Done In Lab.\par
+\b\f1\fs36\bullet\f0\fs32\lang1033  \fs36\lang9 Storage solution\par
+\b0\fs28 1. compare GPT and MBR\par
+Ans. GPT is a newer partitioning standard than MBR and doesn't have as many limitations.\par
+2. different between VHD and VHDX\par
+Ans. VHDX has a much larger storage capacity than the older VHD format.\par
+3. what is SMB and NFS\par
+Ans. File access storage protocols.\par
+4. what is sharing permission\par
+Ans. Share permissions allow you to control who accesses folders over the network. \par
+5. what is NTFS permission\par
+Ans. NTFS permissions are used to manage access to the files and folders that are stored in NTFS file systems.\par
+6. what is resource ownership\par
+Ans. The Resource Owner is usually the Foreign Key used to retrieve records from the protected Resource Server.\par
+7. what is storage pool\par
+Ans. A storage pool is a collection of storage volumes\par
+8. what is basic disk and dynamic disk\par
+Ans.  Basic disk uses normal partition tables found in MS-DOS and Windows to manage all partitions on the hard disk. In dynamic disk, a hard drive is divided into dynamic volumes. \par
+9. what is simple volume , spanned volume\par
+Ans. Spanned volume is a combination of two or more physical disks with each disk containing a part of the volume. A Simple Volume is a single region on a single physical disk that is used to create and store data.\par
+10. describe RAID 0 , RAID 1 , RAID 5, RAID 6 , RAID 1 0\par
+Ans. The most common types are RAID 0 (striping), RAID 1 (mirroring) and its variants, RAID 5 (distributed parity), and RAID 6 (dual parity). Multiple RAID levels can also be combined or nested, for instance RAID 10 (striping of mirrors) or RAID 01 (mirroring stripe sets).\par
+11. describe DAS, NAS and SAN\par
+Ans. DAS primarily uses hard-drive storage with sectors, NAS uses shared files, and SAN uses block storage. \par
+12. what is iscsi initiator and target?\par
+Ans. iSCSI Initiator \f1\endash  The client machine within a storage network is an iSCSI Initiator. The initiator can connect to the target by forming a session among them and can send iSCSI commands. iSCSI Target \endash  The server machine within a storage network is an iSCSI target.\f0\par
+13. what is data duplication?\par
+ans. Data Deduplication, often called Dedup for short, is a feature that can help reduce the impact of redundant data on storage costs.\par
+\cf1\b\f1\fs32\bullet\f0  Practical\par
+\cf0\b0\fs28 1. share \ldblquote data\rdblquote  a folder and give read / write permission to first user\par
+Ans. Done In Lab.\par
+2. share \ldblquote data\rdblquote  folder and give read permission to another user\par
+Ans. Done In Lab.\par
+3. share a \ldblquote data\rdblquote  folder create a file in that folder and remove inheritance\par
+Ans. Done In Lab.\par
+permission and give different ntfs permission to different user\par
+Ans. Done In Lab.\par
+4. configure RAID 1 and check redundancy\par
+Ans. Done In Lab.\par
+5. configure RAID 5 and check redundancy\par
+Ans. Done In Lab.\par
+6. configure iscsi target and iscsi initiator and allocate remote storage\par
+Ans. Done In Lab.\par
+7. configure data deduplication\par
+Ans. Done In Lab.\par
+\b\f1\fs36\bullet\f0\fs32\lang1033  \fs36\lang9 Implement Hyper-V\par
+\b0\fs28 1. what is virtualization\par
+Ans. Server virtualization is the process of dividing a physical server into multiple unique and isolated virtual servers by means of a software application.\par
+2. type of virtualization and compare it\par
+Ans. Emulation Virtualization \f1\endash  The virtual machine simulates the hardware and becomes independent of it. The guest operating system does not require any modifications. Paravirtualization \endash  the hardware is not simulated and the guest software runs their own isolated domains.\f0\par
+3. Describe hyper v\par
+Ans. Hyper-V virtualization is the process of creating multiple VMs using hypervisor-V on a system running Windows.\par
+4. what is remote management of hyper v\par
+Ans. Hyper-V Manager lets you manage a small number of Hyper-V hosts, both remote and local. \par
+5. what is hyper v manager\par
+Ans. Hyper-V Manager is a free Windows Server tool\par
+6. what is virtual machine and nested virtualization\par
+Ans. Nested virtualization lets you run virtual machine (VM) instances inside of other VMs so you can create your own virtualization environments. \par
+7. what is dynamic memory\par
+Ans. It gave the Hyper-V hypervisor the capability to dynamically adjust the amount of memory assigned to a machine based on memory demand.\par
+8. what is NUMA\par
+Ans. NUMA is an alternative approach that links several small, cost-effective nodes using a high-performance connection. \par
+9. describe Virtual Machine functions\par
+Ans. A Virtual Machine (VM) is a compute resource that uses software instead of a physical computer to run programs and deploy apps.\par
+10. describe Hyper v functions\par
+Ans. A Hyper-V server can help individual VMs to connect to different networks.\par
+12. hyper v networking\f1\emdash virtual nic , hyper v switch\par
+\f0\lang1033 Ans. Hyper-V Virtual Switch is a software-based layer-2 Ethernet network switch that is available in Hyper-V Manager when you install the Hyper-V server role.\f1\lang9\par
+13. hyper v storage---vhd ,vhdx , fixed size, dynamic expanding\par
+\f0\lang1033 Ans. \f1\lang9\par
+\cf1\b\fs32\bullet\f0  Practical\par
+\cf0\b0\fs28 1. install hyper v and configure a virtual switch\par
+Ans. Done In Lab.\par
+2. install virtual machine and install windows 10\par
+Ans. Done In Lab,\par
+3. create a checkpoint\par
+Ans. Done In Lab.\par
+4. P4 create a virtual hdd (vhd) and attach to virtual machine\par
+Ans. Done In Lab.\par
+\b\f1\fs36\bullet\f0\fs32\lang1033  \fs36\lang9 Windows containers\par
+\b0\fs28 1. describe containers\par
+Ans. Containers are packages of software that contain all of the necessary elements to run in any environment.\par
+2. what is docker?\par
+Ans. Docker is an operating system for containers.\par
+3. hyper v containers and windows containers\par
+Ans. Unlike Windows Server Containers, which share the kernel, Hyper-V Containers do not share kernels and instead each container runs its own kernel, which makes them special VMs.\par
+\cf1\b\f1\fs32\bullet\f0  Practical\par
+\cf0\b0\fs28 1. install windows container\par
+Ans. Done In Lab.\par
+2. install container in core server\par
+Ans. Done In Lab.\par
+3. install container in nano server\par
+Ans. Done In Lab.\par
+\b\f1\fs36\bullet\f0\lang1033  \lang9 High availability\b0\fs28\par
+1. hyper v live migration\par
+Ans. \par
+2. what is high availibilty?\par
+Ans. \par
+3. what is cluster, quorum and witness?\par
+Ans. The cluster quorum is the majority of voting nodes in the active cluster membership plus a witness vote.\par
+4. describe cluster storage\par
+Ans. Clustered storage combines multiple arrays or controllers to increase their performance, capacity or reliability.\par
+5. what is NLB?\par
+Ans. Network Load Balancing.\par
+6. importance of network in Failover and NLB\par
+Ans. \par
+7. describe node in cluster and its operation\par
+Ans. A node is usually a physical computer system with a distinct host IP address that is running one or more application servers.\par
+\cf1\b\f1\fs32\bullet\f0  Practical\par
+\cf0\b0\fs28 1. Install and configure failover cluster for hyper v\par
+Ans. Done In Lab.\par
+2. install and configure NLB for web server\par
+Ans. Done In Lab.\par
+\b\f1\fs36\bullet\f0  Maintain and monitor server\par
+\b0\fs28 1. need of updates\par
+Ans. The main benefit of Windows Update is that it keeps your server up to date with security and bug fixes automatically.\par
+2. what is WSUSand importance of WSUS 3 WSUS architecture\par
+Ans. The purpose of Windows Server Update Services WSUS is to\par
+What is WSUS? \par
+Ans. The purpose of Windows Server Update Services WSUS is to\par
+What is WSUS? WSUS is also known as Windows Server Update Services, and its first version is called Server Update Services (SUS). It helps distribute updates, fixes, and other types of releases available from Microsoft Update.\par
+3. 4synchronization of update, product and classification 5 wsus group\par
+4. wsus port number and wsus policy\par
+Ans.  By default, WSUS is configured to use HTTP (non-SSL) over port 8530, and HTTPS (SSL) over port 8531. \par
+5. what is backup and restore 8 type of backup\par
+Ans. The most common backup types are a full backup, incremental backup and differential backup\par
+6. difference between incremental and differential backup\par
+Ans. A differential backup strategy only copies data changes since the last full backup. On the other hand, an incremental data backup strategy copies data changes since the last backup.\par
+7. what is full server backup\par
+Ans. A full backup is a complete copy of a business or organization's data assets in their entirety.\par
+8. what is use of performance monitor\par
+Ans. These metrics to improve the performance of Windows Server and virtualization environments effortlessly.\par
+\cf1\b\f1\fs32\bullet\f0  Practical\par
+\cf0\b0\fs28 1. install and configure wsus server\par
+Ans. Done In Lab.\par
+2. apply update to particular client group through wsus\par
+Ans. Done In Lab.\par
+3. Take customize backup of data\par
+Ans. Done In Lab.\par
+4. restore backup original location and also another location\par
+Ans. Done In Lab.\par
+5. backup schedule and check it.\par
+Ans. Done In Lab.\par
+6. take full backup\par
+Ans. Done In Lab.\par
+7. performance monitor of current process\par
+Ans. Done In Lab.\par
+8. performance monitor of cpu, memory\par
+Ans. Done  In Lab.\par
+\par
+}
+ 
